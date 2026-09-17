@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Poppe-Kaca— Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body data-page="home">
+    <div class="site-shell">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">Mateusz Poppe-Kaca<span>Full-Stack Developer</span></div>
+                <button class="sidebar-toggle" aria-expanded="false" aria-label="Menu">
+                    <span>Menu</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+            </div>
+            <div class="sidebar-body">
+                <nav class="sidebar-nav">
+                    <a href="#hero" data-page="home">Start <span>01</span></a>
+                    <a href="#about" data-page="about">O mnie <span>02</span></a>
+                    <a href="#projects" data-page="projects">Projekty <span>03</span></a>
+                    <a href="#skills" data-page="skills">Stack <span>04</span></a>
+                    <a href="#contact" data-page="contact">Kontakt <span>05</span></a>
+                </nav>
+                <div class="sidebar-footer">
+                    <p>© 2026 Mateusz Poppe-Kaca</p>
+                    <p><button class="back-to-top">↑ Góra</button></p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="site-main">
+            <section id="hero" class="page-section">
+                <div class="prose">
+                    <h1 class="hero-title">Zamiłowanie do frontendu</h1>
+                    <p class="hero-lead">Dirty coding oraz zajawka</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="button button--solid">Projekty</a>
+                        <a href="#contact" class="button">Kontakt</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="page-section">
+                <h2 class="section-heading">O mnie</h2>
+                <div class="prose">
+                    
+                    <p>Tworze wiele projektów któtrych nigdy nie kończe :(</p>
+                </div>
+            </section>
+
+            <section id="projects" class="page-section">
+                <h2 class="section-heading">Projekty</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div>
+                            <h3>Mobile Gate opener</h3>
+                            <p>Aplikacja do zdalnego otwieranie bram</p>
+                            <div class="project-tags"><span class="tag">React</span><span class="tag">TailWind CSS</span><span class="tag">Django</span></div>
+                        </div>
+                        <a href="https://github.com/mj426382/crud-brama" target="_blank" rel="noopener noreferrer">Szczegóły →</a>
+
+                    </article>
+                    <article class="project-card">
+                        <div>
+                            <h3>Revizo</h3>
+                            <p>Aplikacja webowa do diagnozy błędów samochodowych</p>
+                            <div class="project-tags"><span class="tag">React</span><span class="tag">TailWind CSS</span><span class="tag">Django</span></div>
+                        </div>
+                        <a href="https://github.com/EszkernyMati/Revizo" target="_blank" rel="noopener noreferrer" class="project-link">Szczegóły →</a>
+                    </article>
+                    <article class="project-card">
+                        <div>
+                            <h3>CRM</h3>
+                            <p>Aplikacja webowa do zarządzania biznesem</p>
+                            <div class="project-tags"><span class="tag">React</span><span class="tag">TailWind CSS</span><span class="tag">Django</span></div>
+                        </div>
+                        <a href="https://github.com/EszkernyMati/CRM" target="_blank" rel="noopener noreferrer" class="project-link">Szczegóły →</a>
+                    </article>
+                    
+                </div>
+            </section>
+
+            <section id="skills" class="page-section">
+                <h2 class="section-heading">Wykorzystwane technologie</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h4>Backend</h4>
+                        <div class="skill-list"><span class="tag">Django</span><span class="tag">C++</span><span class="tag">Node.js</span><span class="tag">Python</span></div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Frontend</h4>
+                        <div class="skill-list"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">TailWind CSS</span><span class="tag">SCSS</span></div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="contact" class="page-section">
+                <h2 class="section-heading">Kontakt</h2>
+                <div class="prose">
+                    <p>Napisz na <a href="mailto:example@mail.com" style="color:var(--brick); text-decoration:underline;">example@mail.com</a> lub użyj formularza:</p>
+                    <form id="contact-form" class="mt-4" novalidate>
+                        <div class="field" id="field-name">
+                            <label for="name">Imię</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="np. Anna">
+                            <div class="field-note is-error" style="display: none;">Podaj imię.</div>
+                        </div>
+                        <div class="field" id="field-email">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="anna@example.com">
+                            <div class="field-note is-error" style="display: none;">Podaj poprawny e-mail.</div>
+                        </div>
+                        <div class="field" id="field-message">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Treść wiadomości..."></textarea>
+                            <div class="field-note is-error" style="display: none;">Wiadomość nie może być pusta.</div>
+                        </div>
+                        <button type="submit" class="button button--solid">Wyślij</button>
+                        <div id="form-success" style="display: none; margin-top: 1rem; color: var(--moss); font-family: var(--font-mono); font-size: 0.9rem;">
+                            ✓ Wysłano pomyślnie. Dzięki!
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../JS/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>
